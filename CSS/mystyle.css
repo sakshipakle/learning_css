@@ -1,0 +1,13 @@
+h3{
+    color:white;
+    background-color:blueviolet;
+}
+p{
+    color: bisque;
+    background-color: brown;
+}
+
+.t_transform_uppercase{
+            text-transform: uppercase !important;
+        }
+        
