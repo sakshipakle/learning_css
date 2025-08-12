@@ -17,17 +17,71 @@
             border: 3px solid rgb(20, 90, 255);
             height: 200px;
             width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            transition: transform 5s ease;
+        }
+        .box1:hover{
+            transform: translate(125px,125px);
+        } 
+        .box2:hover{
+            transform: translateX(150px);
+        }
+        .box3:hover{
+            transform: translateY(150px);
+        }
+        .box4:hover{
+            transform:rotate(720deg);
+        }
+        .box5:hover{
+            transform:skewX(20deg);
+        }
+        .box6:hover{
+            transform:skewY(20deg);
+        }
+        .box7:hover{
+            transform:skew(20deg,20deg);
+        }
+        .box8:hover{
+            transform:skew(1.2);
+        }
+        .box9:hover{
+            transform:skew(3) rotate(90deg) translate(100px);
+        }
+        .img-wrapper{
+            width: 300px;
+            height: 250px;
+            border: 2px solid red;
+            position: relative;
+            overflow: hidden;
+        }
+        .inner-img{
+            width: 100%;
+            height: 100%;
+            transition: 3s;
+        }
+        .inner-img:hover{
+            transform: scale(1.5);
         }
     </style>
 </head>
 <body>
+    <div class="img-wrapper">
+        <img src="images/cat-6.jpg" alt="cat" class="inner-img">
+    </div>
+
     <div class="container">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
-        <div class="box box5"></div>
-        <div class="box box6"></div>
+        <div class="box box1">Translate x & Y</div>
+        <div class="box box2">Translate x</div>
+        <div class="box box3">Translate Y</div>
+        <div class="box box4">Rotate</div>
+        <div class="box box5">SkewX</div>
+        <div class="box box6">SkewY</div>
+        <div class="box box7">Skew</div>
+        <div class="box box7">Scale</div>
+        <div class="box box7">Multiple</div>
     </div>
 </body>
 </html>
