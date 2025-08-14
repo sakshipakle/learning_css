@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Media queries*/
+        /* Mobile first, we start from the smallest viewport width*/
+        .img1{
+            width: 200px;
+            height: 300px;
+        }
+        @media (min-width:320px) and (max-width:767px){
+            body{
+                font-size: 20px;
+                background-color: rgb(227, 109, 109);
+            }
+            p{
+                display: none;
+            }
+            h1,h3{
+                color: azure;
+            }
+            .img1{
+                display: none;
+            }
+        }
+       
+        /*from 768px and up*/
+        @media(min-width:1024px){
+            body{
+                background-color: rgb(242, 212, 167);
+            }
+        }
+
+        /*from 1224px and up*/
+        @media(min-width:1224px){
+            body{
+                background-color: rgb(248, 219, 74);
+            }
+        }
+
+        /*from 1824px and up*/
+        @media(min-width:850px) and (max-width:950px){
+            body{
+                background-color: rgb(123, 7, 135);
+            }
+            h1,h3{
+                color: aqua;
+                font-size: 30px;
+            }
+            .img{
+                display:none;
+            }
+        }
+        /*max-width query*/
+         /*from 850 and up, until 950px*/
+          @media(min-width:1824px){
+            body{
+                background-color: rgb(3, 147, 150);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Media Queries</h1>
+    <p>The background will change according to the viewport width change</p><br><br>
+    <img class="img1" src="images/coffee PNG.png" alt="coffee">
+
+    <h3>Smartphones - <span class="details">from 320 and up</span>(min-width:320px)</h3>
+    <p>BLUE</p>
+    <br>
+
+    <h3>Tablets, ipads(portrait) - <spam class="details">from 768px and up</spam>(min-width:768px)</h3>
+    <p>GREEN</p>
+    <br>
+
+     <h3>Tablets, ipads(landspace) - <spam class="details">from 1024px and up</spam>(min-width:1024px)</h3>
+    <p>YELLOW</p>
+    <br>
+
+     <h3>Desktop and laptops - <spam class="details">from 1224px and up</spam>(min-width:1224px)</h3>
+    <p>ORANGE</p>
+    <br>
+
+     <h3>Large screens - <spam class="details">from 1824px and up</spam>(min-width:1824px)</h3>
+    <p>AQUA (zoom out if neded [ctrl & -])</p>
+    <br>
+
+    <h3>Custom media query - <spam class="details">from 850px and up, until 950px</spam>(min-width:850px) and (max-width 950)</h3>
+    <p>PURPLE (zoom out if neded [ctrl & -])</p>
+    <br>
+</body>
+</html>
